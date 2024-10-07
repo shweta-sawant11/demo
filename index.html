@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long-Term Rental Options</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+
+        const scrollContainer = document.querySelector("main");
+
+scrollContainer.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    scrollContainer.scrollLeft += evt.deltaY;
+});
+        
+
+
+        </script>
+<style>
+.main {
+    overflow-x: hidden;
+    display: flex;
+  }
+  </style>
+    <!-- <style>
+        /* Hide scrollbar for mobile and desktop */
+        .hide-scroll-bar::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .hide-scroll-bar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+
+        /* Only show scrollbar on mobile */
+        @media (min-width: 768px) {
+            .hide-scroll-bar::-webkit-scrollbar {
+                display: block;
+            }
+
+            .hide-scroll-bar {
+                -ms-overflow-style: auto;  /* IE and Edge */
+                scrollbar-width: auto;  /* Firefox */
+            }
+        }
+    </style> -->
+</head>
+
+<body class="bg-gray-50 font-sans antialiased">
+    <div class="max-w-6xl mx-auto py-10 px-4">
+        <!-- Heading -->
+        <div class="text-center mb-8">
+            <div class="absolute md:left-[19rem] md:top-[32px]">
+                <img src="./images/Vector 7480.svg" alt="">
+            </div>
+            <h1 class="text-4xl font-semibold">New to the city, want to travel like a local?</h1>
+            <img src="./images/Vector 7479.svg" alt="" class="absolute md:right-[23%] md:top-[65px]">
+            <p class="text-xl font-bold">Explore our Long-Term Rental options!</p>
+        </div>
+
+        <!-- Cities Section -->
+            <div class=" main flex space-x-4 pb-4 hide-scroll-bar">
+            <div class="relative min-w-[200px] overflow-hidden rounded-lg shadow-lg flex">
+                <img class="w-full h-48 object-cover" src="./iimages/img1.jfif" alt="Bangalore">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                    <span class="text-white text-xl font-bold">BANGALORE</span>
+                </div>
+            </div>
+            <div class="relative min-w-[200px] overflow-hidden rounded-lg shadow-lg flex">
+                <img class="w-full h-48 object-cover" src="./iimages/img2.jfif" alt="Chennai">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                    <span class="text-white text-xl font-bold">CHENNAI</span>
+                </div>
+            </div>
+            <div class="relative min-w-[200px] overflow-hidden rounded-lg shadow-lg flex">
+                <img class="w-full h-48 object-cover" src="./iimages/img3.jfif" alt="Delhi">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                    <span class="text-white text-xl font-bold">DELHI</span>
+                </div>
+            </div>
+            <div class="relative min-w-[200px] overflow-hidden rounded-lg shadow-lg flex">
+                <img class="w-full h-48 object-cover" src="./iimages/img4.jfif" alt="Mumbai">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                    <span class="text-white text-xl font-bold">MUMBAI</span>
+                </div>
+            </div>
+            <div class="relative min-w-[200px] overflow-hidden rounded-lg shadow-lg flex">
+                <img class="w-full h-48 object-cover" src="./iimages/img5.jfif" alt="Hyderabad">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                    <span class="text-white text-xl font-bold">HYDERABAD</span>
+                </div>
+            </div>
+            <div class="relative min-w-[200px] overflow-hidden rounded-lg shadow-lg flex">
+                <img class="w-full h-48 object-cover" src="./iimages/img5.jfif" alt="Hyderabad">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                    <span class="text-white text-xl font-bold">HYDERABAD</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Monthly Bike Rentals Section -->
+        <div class="mt-10 text-center">
+            <h2 class="text-2xl font-bold text-gray-900">Monthly Bike Rentals</h2>
+            <p class="mt-4 text-gray-700 max-w-3xl mx-auto">
+                Long ride or touring around? Everyday commute or fieldwork? Hurting your toes in buses, catching the timely metros, and waiting for cabs with woes in old fashion. Upgrade your travel mode with bike rides!
+            </p>
+            <button class="text-gray-700 font-bold mt-5">Show More</button>
+        </div>
+    </div>
+</body>
+
+</html>
